@@ -42,7 +42,7 @@
 
 \hypersetup{
     colorlinks=true,
-    urlcolor=cyan,
+    urlcolor=red,
 }
 
 % View commands
@@ -50,12 +50,12 @@
 
 % can makebox also be used?
 \newcommand\headerview{
-\begin{minipage}{0.25\linewidth}
-    \profpic{0.22}{images/profilepicture}
-\end{minipage}% 
-\hfill
-\begin{minipage}{0.45\linewidth}
-    \center \name \\[0.05cm] 
+% \begin{minipage}{0.25\linewidth}
+%     \profpic{0.22}{images/profilepicture}
+% \end{minipage}% 
+% \hfill
+\begin{minipage}{1.0\linewidth}
+    \center \name \\[0.05cm]
     \contact % address \ mobile \\ mail
 \end{minipage}
 }
@@ -80,7 +80,7 @@
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+    {\huge \@firstname \ \textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%

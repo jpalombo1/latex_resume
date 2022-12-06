@@ -1,5 +1,5 @@
 % !TEX root = ./resume.tex
-
+% from https://github.com/muratcankaracabey/latex_cv
 \documentclass{muratcan_cv}
 
 \setname{Joseph}{Palombo}
@@ -7,7 +7,7 @@
 \setmobile{(848) 565-8273}
 \setmail{jpyanks95@gmail.com}
 \setposition{Research Engineer} %ignored for now
-\setlinkedinaccount{https://www.linkedin.com/in/joseph-palombo/}
+\setlinkedinaccount{https://www.linkedin.com/in/joepalombo/}
 \setgithubaccount{https://github.com/jpalombo1} 
 \setthemecolor{red} %you can play with color of the template (red is also nice..)
 
@@ -21,7 +21,7 @@
 %
 % Summary
 \addblocktext{Objective}{%
-Conduct research engineering in order to design and implement novel algorithms from literature to be applied to problem domains.
+Senior level research engineering where I would use my subject expertise in software development, deployment of fielded systems, and research implementation of novel algorithms to solve customer facing problems and to train junior engineers on best practices.
 }
 %
 %Education
@@ -33,19 +33,19 @@ Conduct research engineering in order to design and implement novel algorithms f
         Dean's List Every Semester, Highest GPA in Major
     }
     \explanationdetail{
-        \coloredbullet\ % 
-            \textbf{\emph{Courses:}} Wireless Communications 
-            \cpshalf Digital Signal Processing 
-            \cpshalf Statistics 
-            \cpshalf Integrated and Linear Circuits 
-            \cpshalf Digital Systems 
-            \cpshalf Electromechanics 
-            \cpshalf ElectroMagnetics 
-            \cpshalf Semiconductors 
-            \cpshalf Smart Grids 
-            \cpshalf Quantum Mechanics 
-            \cpshalf Material Science 
-            \cpshalf Symbolic Logic
+        % \coloredbullet\ % 
+        \textbf{\emph{Courses:}} Wireless Communications 
+        \cpshalf Digital Signal Processing 
+        \cpshalf Statistics 
+        \cpshalf Integrated and Linear Circuits 
+        \cpshalf Digital Systems 
+        \cpshalf Electromechanics 
+        \cpshalf ElectroMagnetics 
+        \cpshalf Semiconductors 
+        \cpshalf Smart Grids 
+        \cpshalf Quantum Mechanics 
+        \cpshalf Material Science 
+        \cpshalf Symbolic Logic
     }
     \datedexperience{Lehigh University}{2017-2018} 
     \explanationgpa{M.Eng in Electrical Engineering}{GPA: 4.00} 
@@ -54,7 +54,7 @@ Conduct research engineering in order to design and implement novel algorithms f
         Presidential scholarship (free tuition for 1 year due to undergrad GPA)
     }
         \explanationdetail{
-            \coloredbullet\ % 
+            % \coloredbullet\ % 
             \textbf{\emph{Courses:}} Deep Learning Reinforcement Learning 
             \cpshalf Communication Theory 
             \cpshalf Control Systems 
@@ -62,17 +62,22 @@ Conduct research engineering in order to design and implement novel algorithms f
             \cpshalf Turbo Codes
     }
     
-\section{Publications}
-    \datedexperience{AIII Conference}{March 2020}
+\section{Accolades}
+    \datedexperience{Published Paper at AIII Conference and IEEE Transactions}{March 2020}
     \explanation{
         Robust Stochastic Bandit Algorithms under Probabilistic Unbounded Adverserial Attack
     }
+    \vspace{1ex}
+    \datedexperience{Lockheed ATL Honors Night Reciepient}{December 2021}
+    \explanationdetail{
+        Company and Industy Recognized award for outstanding Test Execution and for maturing a program further than any in the lab before it in terms of deliverables.
+    }
+    \datedexperience{Granted DoD Top Secret/ SCI Security Clearence}{June 2020 - Present}
 
 \section{Knowledge Areas}
     \newcommand{\knowone}{
         \createskill{Deinterleaving}{
-            Clustering 
-            \cpshalf DBSCAN 
+            DBSCAN 
             \cpshalf Penalized Markov 
             \cpshalf Hidden Markov Models 
             \cpshalf Multi-Hypothesis Tracking
@@ -82,7 +87,7 @@ Conduct research engineering in order to design and implement novel algorithms f
         \createskill{Machine Learning}{
             Q Learning 
             \cpshalf Bayesian Hyperoptimization 
-            \cpshalf Deep NN 
+            \cpshalf Deep Neural Networks 
             \cpshalf SVMs
         }
     }
@@ -119,10 +124,9 @@ Conduct research engineering in order to design and implement novel algorithms f
             \cpshalf Java 
             \cpshalf Verilog 
             \cpshalf Assembly 
-            \cpshalf LaTeX 
+            \cpshalf LaTeX (this pdf was made using it!)
             \cpshalf HTML 
             \cpshalf CSS 
-            \cpshalf SCPI
         }
     }
     \newcommand{\skilltwo}{
@@ -131,7 +135,8 @@ Conduct research engineering in order to design and implement novel algorithms f
             \cpshalf GitLab 
             \cpshalf GitHub 
             \cpshalf Docker 
-            \cpshalf VirtualBox 
+            \cpshalf VirtualBox
+            \cpshalf Kubernetes 
             \cpshalf DevOps 
             \cpshalf CI/CD 
             \cpshalf JIRA 
@@ -145,9 +150,11 @@ Conduct research engineering in order to design and implement novel algorithms f
             \cpshalf USRP/UHD 
             \cpshalf Arduino 
             \cpshalf ArrayFire 
-            \cpshalf LabView 
+            \cpshalf LabView
+            \cpshalf ActiveMQ 
             \cpshalf Vivado 
-            \cpshalf PSPICE 
+            \cpshalf PSPICE
+            \cpshalf SCPI 
             }
     }
     \newcommand{\skillfour}{
@@ -187,37 +194,139 @@ Conduct research engineering in order to design and implement novel algorithms f
     \createskills{\skillone, \skillonea, \skilltwo, \skillthree, \skillfour, \skillfive, \skillsix}
 
 \section{Experience}
-    \datedexperience{Lockheed Martin}{June 2018 - Present} 
-    \explanation{Full Time Research Engineer}
-    \explanationdetail{\coloredbullet\
-    stuff 1} 
+    \datedexperience{Lockheed Martin Advanced Technology Lab}{June 2018 - Present} 
+    \explanationgpa{Research Engineer}{June 2020 - Present}
+    \explanationdetail{
+        \coloredbullet\
+        Architect for drone detection system that uses ROS to broker messages across multiple nodes over a LAN.
+        Flows detection data from multiple types of sensors through a common messaging API to central unit for processing and multi-sensor tracking of drones.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Led team in exploration of pipelining algorithms using adaptable frameworks and parameter hyperoptimization to search for the optimal algorithm parameters and pipeline configuration for deinterleaving and classification problems. 
+        Also made framework of metrics to measure resource usage and performance, and a user friendly GUI to process data.
+        Fulfilled project management roles such as budgeting, final report, scheduling meetings, and staffing.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Lead contributor on Cognitive EW system, where I provided real time RF front end processing capabilities using Vita49 standard and GPU accelration with ArrayFire.
+        Job of integrating multiple components of system in a SIL using Kubernetes and containerization to network front end with engine components. 
+        Software flew on fielded AC-130 and won company wide recognition.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Lead developer and maintainer of deinterleaving algorithm repo to spreahead lab-wide shared mature repo.
+        Included adding CI/CD, unit testing, linting, documentation, type checking safety, optimizing algorithm code by orders of magnitude, on previously messy research code.
+        Used on multiple followon on efforts to speed development time of similar capabilities across programs.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Adopted industy and government wide standard for Cognitive EW systems for Lockheec implementation in corporate wide effort.
+        Used AMQ message broker and Kubernetes based orchestration to make mission and management apps of varying capabilities in USAF ecosystem for fielded products.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Part of Interview committee to hire new Associate engineers, specifically vetting candidates for software and algorithm knowledge to meet program needs.
+    }
+    \explanationgpa{Associate Research Engineer}{June 2018 - June 2020}
+    \explanationdetail{
+        \coloredbullet\
+        Designed IP blocks in Vivado for Zynq Processor development for FPGA capabilities
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Worked on Internal Research efforts for Cognitive Radio standups using LiquidDSP and USRPs to implement machine learning techniques and algorithms to implement spectrum sharing and adaptive jamming. 
+        Led to publication
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Improved performance of STFT detection algorithms and HMM-GMM algorithms in classified effort of detecting deinterleaving and classifying radars in a cluttered space. 
+        Presentation to AFRL led to much follow up work.
+    }
+    \datedexperience{Johns Hopkins Applied Physics Lab}{September 2015 - August 2016} 
+    \explanationgpa{Co-Op Engineer, Rotation 2}{May 2016 - August 2016}
+    \explanationdetail{
+        \coloredbullet\
+        Deployed mesh ad-hoc wifi network by optimizing routing and multi-hop costs between nodes that perform dynamic     
+        frequency allocation to lessen interference. Also built and improved LTE network performance to service more mobiles.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Designed and built power system of portable GPS bike tracking system that used solar power and sensors and 
+        programmed control system using Arduino and relay to conserve power and control system activation
+    }
+    \explanationgpa{Co-Op Engineer, Rotation 1}{September 2015 - December 2015}
+    \explanationdetail{
+        \coloredbullet\
+        Built deployable cellular network with Linux mini-PC, OpenBTS/GSM, and software defined radio that was  smaller, lighter, and faster than previous versions and was field tested.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Automated testing for pulse modulation, harmonics, and P1dB tests for amplifiers that drastically decreased             
+        testing times by 80\% by interacting with equipment SCPI drivers, then stored collected data for visual output
+    }
     \datedexperience{Wireless Telecom Group}{June 2017 - August 2017} 
     \explanation{Co-Op Electrical Engineering Intern} 
-    \explanationdetail{\coloredbullet\
-    stuff 1}
-    \datedexperience{Johns Hopkins Applied Physics Lab}{September 2015 - December 2016} 
-    \explanation{Co-Op Engineer, 2 Rotations} 
-    \explanationdetail{\coloredbullet\
-    stuff 1
+    \explanationdetail{
+        \coloredbullet\
+        Troubleshooted many issues such as CPRI links, FPGA registers, and networking issues and tested power specifications, connection link integrity and speed.
     }
+    \explanationdetail{
+        \coloredbullet\
+        Worked on Active GPS repeater system which acquires GPS locks and relays signal to devices in DAS network for clock synchronization and self monitoring.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Designed active splitter schematic and 4-layer PCB in Altium and fixed hardware issues
+    }
+    \datedexperience{Beach Electric}{December 2016 - January 2017} 
+    \explanation{Intern Project Estimtor}
+    \explanationdetail{
+        \coloredbullet\
+        Worked alongside estimator to assess value of and bid for electrical contracts of public sector projects.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Used Accubid software, performed takeoffs of electrical diagrams, and went on site visits for contracts over \$1 million.
+    }
+    \datedexperience{Senior Design Project}{August 2016 - May 2017} 
+    \explanation{Fall Detection System}
+    \explanationdetail{
+        \coloredbullet\                                                                        
+        Shoe insole device and app that detects if the user has fallen and automatically sends SMS alerts to emergency contacts. 
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Won Most Outstanding Project Award at Lehigh Project Fair; awarded by panel of judges in industry and academia.
+    }
+    \datedexperience{Research Assistant}{January 2017 - June 2017} 
+    \explanation{Passive Radar with Known Signals}
+    \explanationdetail{
+        \coloredbullet\                                                                        
+        Worked under a professor looking into signal detection performance of passive radar using known signals like GSM.
+    }
+    \explanationdetail{
+        \coloredbullet\
+        Achieved active radar performance by using generalized likelihood ratio test and with increased samples per bit.
+    }
+
     
 \section{Extra}
     \newcommand{\extraone}{%
     Residential Electrician Apprentice Work
     }
-    %
     \newcommand{\extratwo}{%
-    Personal Programming Projects (mostly in Python) that include word gui entry/auto completion for immobile people, tackle interesting problems like Wordle five-clique and programs for games like chess, pinochle, etc.
+    Personal Programming Projects (mostly in Python) that include word gui entry/auto completion for immobile users, tackle interesting problems like Wordle five-clique and programs for games like chess, pinochle, etc.
     }
-    %
     \newcommand{\extrathree}{%
+    Former Manager and all time top earner at Lehigh Liners, which performed fundraising for the university through cold calls.
+    }
+    \newcommand{\extrafour}{%
     \textbf{\emph{Hobbies:}} Brazilian Jiu Jitsu, Chess, Working Out, Cooking
     }
-    %
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
-    %
+    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree, \extrafour}
     \createbullets{\listofextras}
 %
 %Footnote
-\createfootnote
+% \createfootnote
 \end{document}

@@ -33,5 +33,5 @@
     ```bash
     % !TEX root = ./<TEX_FILENAME>.tex
     ```
-
+1. Get FontAwesome by going to `/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome` in finder, then double click `FontAwesome.otf` to install font
 1. On each save of .tex file, it will attempt to build PDF. Look at TEX section at left pane or Output terminal for any compile errors.
